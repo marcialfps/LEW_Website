@@ -23,9 +23,13 @@ nav a {
     text-decoration: none;
 }
 
-nav li:hover, .actual {
+nav a:hover, .actual a {
     color: #8C7C5D;
     text-decoration-line: underline;
+}
+
+nav a {
+    color: #121726;
 }
 
 article {
@@ -96,10 +100,6 @@ footer {
     
     nav {
         background-color: #E8EAFA;
-    }
-    
-    nav a {
-        color: #121726;
     }
     
     nav ul {
@@ -250,7 +250,7 @@ footer {
     }
     
     #menu li {
-        padding: 10px 0;
+        padding: 3px 0;
     }
     
     nav input:checked ~ ul {
