@@ -19,7 +19,7 @@ nav {
 
 nav a {
     font-family: sans-serif;
-    font-family: Trebuchet MS, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     text-decoration: none;
 }
 
@@ -151,7 +151,6 @@ footer {
     header {
         display: flex;
         flex-direction: row;
-        ali
         font-size: 0.8em;
     }
     
@@ -168,7 +167,7 @@ footer {
         
         z-index: 1;
         
-        -webkit-user-select: none;
+        /*-webkit-user-select: none;*/
         user-select: none;
     }
     
@@ -244,7 +243,7 @@ footer {
         border: 2px solid;
         border-color: #121726;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;
+        /*-webkit-font-smoothing: antialiased;*/
         
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
         
@@ -266,7 +265,7 @@ footer {
 
 h1, h2, h3 {
    font-family: sans-serif;
-    font-family: Trebuchet MS, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     text-align: center;
 }
 
@@ -290,7 +289,7 @@ h4 {
 
 p, body a {
     font-family: sans-serif;
-    font-family: Trebuchet MS, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     text-align: justify;
 }
 
@@ -310,7 +309,7 @@ article a {
 
 q {
    font-family: sans-serif;
-    font-family: Trebuchet MS, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     font-style: italic;
     font-size: 90%;
     text-align: justify; 
