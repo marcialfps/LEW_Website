@@ -68,6 +68,88 @@ footer {
     flex-wrap: wrap;
 }
 
+h1, h2, h3 {
+   font-family: sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 150%;
+    color: #8C7C5D;
+}
+
+h4 {
+    font-family: sans-serif;
+    color: #121726;
+}
+
+p, body a {
+    font-family: sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: justify;
+}
+
+p {
+    font-size: 100%;
+}
+
+footer p {
+    font-size: 75%;
+    margin: 2px;
+    text-align: center;
+}
+
+article a {
+    font-size: 75%;
+}
+
+q {
+   font-family: sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: italic;
+    font-size: 90%;
+    text-align: justify; 
+}
+
+form {
+    width: 90%;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.button {
+    background-color: #5990D9;
+    border: none;
+    color: white;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 85%;   
+}
+
+.button:hover {
+    background-color: #999DDF;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
 
 /************ Pantallas grandes ************/
 @media (min-width: 640px) {
@@ -236,7 +318,7 @@ footer {
     #menu {
         position: absolute;
         width:auto;
-        margin: -30px 0 0 -550px;
+        margin: -32px 0 0 -550px;
         padding: 20px 10px 20px 80px;
 
         background: #E8EAFA;
@@ -256,75 +338,31 @@ footer {
     nav input:checked ~ ul {
         transform-origin: 0% 0%;
         transform: translate(170%, 0);
-
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
         display: block;
     }
 }
 
-h1, h2, h3 {
-   font-family: sans-serif;
-    font-family: "Trebuchet MS", sans-serif;
-    text-align: center;
+/************ Animaciones ************/
+.portada {
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-h1 {
-    color: white;
+.portada:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-h2 {
-    font-size: 200%;
+.portada {
+	opacity: 1;
+  animation: fade 3s linear;
 }
 
-h3 {
-    font-size: 150%;
-    color: #8C7C5D;
-}
 
-h4 {
-    font-family: sans-serif;
-    color: #121726;
-}
-
-p, body a {
-    font-family: sans-serif;
-    font-family: "Trebuchet MS", sans-serif;
-    text-align: justify;
-}
-
-p {
-    font-size: 100%;
-}
-
-footer p {
-    font-size: 75%;
-    margin: 2px;
-    text-align: center;
-}
-
-article a {
-    font-size: 75%;
-}
-
-q {
-   font-family: sans-serif;
-    font-family: "Trebuchet MS", sans-serif;
-    font-style: italic;
-    font-size: 90%;
-    text-align: justify; 
-}
-
-form {
-    width: 90%;
-}
-
-input, textarea {
-    width: 100%;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+@keyframes fade {
+  0% { opacity: 0 }
+  50% { opacity: 1 }
 }
