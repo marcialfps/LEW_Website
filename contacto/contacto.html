@@ -18,9 +18,8 @@
     <label>
         <nav id="navegacion" name="navegacion">
             
-            <label>
-                <input id="boton-navegacion" name="boton-navegacion" type="checkbox" />
-            </label>
+            <label for="boton-navegacion">&#32;</label>
+            <input id="boton-navegacion" name="boton-navegacion" type="checkbox" />
 
             <span></span>
             <span></span>
@@ -102,8 +101,11 @@
                 <label for="comentario">¿Cómo te gustaría colaborar?</label>
                 <textarea id="comentario" name="comentario" rows="20" cols=30></textarea><br>
                 
-                <input class="button" type="submit" value="Enviar">
-                <input class="button" type="reset" value="Resetear">
+                <label for="enviar">&emsp;</label>
+                <input class="button" id="enviar" name="enviar" type="submit" value="Enviar">
+                
+                <label for="resetear">&emsp;</label>
+                <input class="button" id="resetear" name="resetear" type="reset" value="Resetear">
             </form>
             
         </section>
