@@ -52,13 +52,13 @@
                         Proyectos actuales
                     </a>
                 </li>
-                <li class="actual">
+                <li>
                     <a title="Contacto"
                        href= "../contacto/contacto.html">
                         Contacto
                     </a>
                 </li>
-                <li>
+                <li class="actual">
                     <a title="Buscador"
                        href= "../buscador/buscador.html">
                         Buscador
@@ -68,15 +68,26 @@
         </nav>
     </label>
     
+    <!-- Start of Site Search 360 Scripts -->
+    <script type="text/javascript">
+        var ss360Config = {
+            siteId: "marcialfps.github.io",
+            searchBox: {
+                selector: "#searchBox"
+            }
+        }
+    </script>
+    <script type="module" src="https://cdn.sitesearch360.com/sitesearch360-v12.mjs"></script>
+    <script nomodule async src="https://cdn.sitesearch360.com/sitesearch360-v12.min.js"></script>
+    <!-- End of Site Search 360 Scripts -->
+    
     <main>
         
         <section>
         
             <h2>Buscador</h2>
 
-            <script async src="https://cse.google.com/cse.js?cx=016778796483796029342:lhc5cgdzbai"></script>
-            
-            <div class="gcse-search"></div>
+            <input type="search" id="searchBox">
             
         </section>
 
