@@ -9,8 +9,8 @@ header {
     background-color: #121726;
 }
 
-.logo {
-    max-width: 15%;
+header a {
+    text-decoration: none;
 }
 
 nav {
@@ -43,18 +43,13 @@ main {
     background-color: #E8EAFA;
 }
 
-.portada {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
 section {
     margin: 15px;
     padding: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 section img {
@@ -98,13 +93,21 @@ p, body a, label {
     text-align: left;
 }
 
+label {
+    font-weight: bold;
+}
+
 p {
     font-size: 100%;
 }
 
-footer p {
+footer p, footer a {
     font-size: 75%;
     margin: 2px;
+    text-align: center;
+}
+
+footer a {
     text-align: center;
 }
 
@@ -128,7 +131,7 @@ input, textarea {
     width: 100%;
 }
 
-.button {
+.button, .buttonReset {
     background-color: #5990D9;
     border: none;
     color: white;
@@ -145,14 +148,33 @@ input, textarea {
     background-color: #999DDF;
 }
 
+.buttonReset {
+    background-color: red;
+}
+
 .icon {
     width: 50px;
     height: 50px;
     margin: 5px;
 }
 
+.welcome {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.mapa {
+    width: 100%;
+    height: 50%;
+}
+
 /************ Pantallas grandes ************/
-@media (min-width: 640px) {
+@media (min-width: 550px) {
     body{
         display: grid;
         grid-template-columns: 100%;
@@ -163,21 +185,38 @@ input, textarea {
             "footer";
     }
     
-    header {
+    header a {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        font-size: 70%;
+        justify-content: flex-start;
+        text-align: right;
+        font-size: 90%;
+        height: 225% !important;
+        margin-left: 20px;
     }
     
-    .logo {
-        align-self: center;
+    .listadoImagenes, .listadoIconos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .listadoImagenes img {
+        max-width: 50% !important;
+    }
+    
+    .listadoIconos img {
+        max-width: 100% !important;
+    }
+    
+    .logo img {
+        max-width: 10%;
+        margin-right: 15px;
     }
     
     h1 {
-        margin: 0px;
+        padding-top: 15px;
     }
     
     nav ul {
@@ -198,6 +237,13 @@ input, textarea {
         display: none;
     }
     
+    .portada {
+        margin-top: 10px;
+        width: 90%;
+        align-self: center;
+        content:url("./img/portada-escritorio.jpg");
+    }
+    
     main {
         display: grid;
         grid-gap: 5px;
@@ -213,7 +259,7 @@ input, textarea {
 }
 
 /************ Dispositivos móviles ************/
-@media (max-width : 640px) {
+@media (max-width : 550px) {
     body{
         display: grid;
         grid-template-columns: 100%;
@@ -224,16 +270,23 @@ input, textarea {
             "footer";
     }
     
-    header {
+    header a {
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
+        margin-left: 20px;
+    }
+    
+    .logo img {
+        width: 20% !important;
+        margin-right: 10px
     }
     
     nav {
         height: 1.3em;
         
-        padding-left: 3px;
+        padding-left: 5px;
+        padding-top: 4px;
         font-size: 150%;
         
         /* Ajustes menu móvil */
@@ -312,7 +365,7 @@ input, textarea {
     #menu {
         position: absolute;
         width:auto;
-        margin: -32px 0 0 -550px;
+        margin: -36px 0 0 -550px;
         padding: 20px 10px 20px 80px;
 
         background: #E8EAFA;
@@ -335,22 +388,28 @@ input, textarea {
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
         display: block;
     }
+    
+    .portada {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
 }
 
 /************ Animaciones ************/
-.portada {
+.portada, .destacado {
   -moz-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.portada:hover, .icon:hover {
+.portada:hover, .destacado:hover, .icon:hover {
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
-.portada {
+.portada, .destacado {
 	opacity: 1;
   animation: fade 3s linear;
 }

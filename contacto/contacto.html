@@ -11,8 +11,10 @@
     
 <body>
    <header>
-        <img class="logo" src="../img/logo.png" alt="Logotipo de Prensa Juvenil Canaria"/>
-        <h1>Prensa Juvenil Canaria</h1>
+        <a class="logo" href="../index.html" title="Prensa Juvenil Canaria">
+            <img src="../img/logo.png" alt="Logotipo de Prensa Juvenil Canaria"/>
+            <h1>Prensa Juvenil Canaria</h1>
+        </a>
     </header>
     
     <label>
@@ -68,19 +70,19 @@
             
             <p>Si desea contactar con nosotros puede realizarlo en una dirección oficial:</p>
             
-            <img src="http://maps.googleapis.com/maps/api/staticmap?center=29.0595671,-13.560033&markers=color:blue%7Clabel:Local%7C29.0595671,-13.560033&zoom=17&size=700x500&maptype=roadmap&key=AIzaSyDIhY8U0bDAtyYyJw-iuIBI2a1KPWbYMJE" alt="Mapa con la localización de nuestro local"/>
+            <iframe class="mapa" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJFzn0w2UgRgwREmwFG-8m1bU&key=AIzaSyDIhY8U0bDAtyYyJw-iuIBI2a1KPWbYMJE" allowfullscreen></iframe>
             
             <p>Plaza de la Constitución 9, Teguise, Lanzarote, Islas Canarias, España</p>
             
             <p>También puedes encontrarnos en diferentes redes sociales.</p>
             
-            <p>
-                <a href="https://www.facebook.com/prensajuvenilcanaria"><img class="icon" src="../img/facebook.png" alt="Facebook"/></a>
+            <div class="listadoIconos">
+                <a href="https://www.facebook.com/prensajuvenilcanaria"><img class="icon" src="../img/facebook.png" alt="Facebook" title="Facebook" target="_blank"/></a>
 
-                <a href="https://twitter.com/prensajuvenil"><img class="icon" src="../img/twitter.png" alt="Twitter"/></a>
+                <a href="https://twitter.com/prensajuvenil"><img class="icon" src="../img/twitter.png" alt="Twitter" title="Twitter" target="_blank"/></a>
 
-                <a href="https://www.instagram.com/prensajuvenilcanaria/"><img class="icon" src="../img/instagram.png" alt="Instagram"/></a>
-            </p>
+                <a href="https://www.instagram.com/prensajuvenilcanaria/"><img class="icon" src="../img/instagram.png" alt="Instagram" title="Instagram" target="_blank"/></a>
+            </div>
         
         </section>
         
@@ -92,20 +94,20 @@
             
             <form action="mailto:prensajuvenilcanaria@gmail.com" method="post" enctype="text/plain">
                 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
                 
                 <label for="email">E-mail</label>
-                <input type="text" id="email" name="email">
+                <input type="text" id="email" name="email" placeholder="email@email.com">
                 
                 <label for="comentario">¿Cómo te gustaría colaborar?</label>
-                <textarea id="comentario" name="comentario" rows="20" cols=30></textarea><br>
+                <textarea id="comentario" name="comentario" rows="20" cols=30 placeholder="Por ejemplo: participar en actividades, proponer ideas, hacer formaciones..."></textarea><br>
                 
                 <label for="enviar">&emsp;</label>
                 <input class="button" id="enviar" name="enviar" type="submit" value="Enviar">
                 
                 <label for="resetear">&emsp;</label>
-                <input class="button" id="resetear" name="resetear" type="reset" value="Resetear">
+                <input class="buttonReset" id="resetear" name="resetear" type="reset" value="Resetear">
             </form>
             
         </section>
@@ -115,7 +117,7 @@
     <footer>
         <p>Desarrollado por Marcial Francisco Parrilla Socas.</p>
         <p>Máster en Ingeniería Web, Universidad de Oviedo.</p>
-        <p>UO251851@uniovi.es</p>
+        <a href="mailto:uo251851@uniovi.es">UO251851@uniovi.es</a>
     </footer>
 </body>
 </html>
